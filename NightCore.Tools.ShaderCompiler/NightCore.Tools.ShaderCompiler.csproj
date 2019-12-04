@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.0</Version>
+    <Authors>alice-alias</Authors>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <Description>NightCore.Tools.ShaderCompiler</Description>
+    <NuspecFile>NightCore.Tools.ShaderCompiler.nuspec</NuspecFile>
+    <NuspecProperties>version=$(Version);id=$(MSBuildProjectName);authors=$(Authors);description=$(Description);conf=$(Configuration);target=$(TargetFramework)</NuspecProperties>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="16.3.0" />
+    <PackageReference Include="SharpDX.D3DCompiler" Version="4.2.0" />
+  </ItemGroup>
+
+</Project>

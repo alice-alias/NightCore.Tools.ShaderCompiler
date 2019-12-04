@@ -1,0 +1,14 @@
+﻿<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <description>$description$</description>
+    <authors>$authors$</authors>
+  </metadata>
+  <files>
+    <file src="NightCore.Tools.ShaderCompiler.targets" target="build"/>
+    <file src="Bin/$conf$/$target$/NightCore.Tools.ShaderCompiler.dll" target="tools"/>
+    <file src="Bin/$conf$/$target$/SharpDX.D3DCompiler.dll" target="tools"/>
+    <file src="Bin/$conf$/$target$/SharpDX.dll" target="tools"/>
+  </files>
+</package>

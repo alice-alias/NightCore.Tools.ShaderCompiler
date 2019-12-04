@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="CompileShader" AssemblyFile="$(MSBuildThisFileDirectory)..\tools\NightCore.Tools.ShaderCompiler.dll" />
+  <Target Name="CompileShader" BeforeTargets="Compile">
+    <CompileShader InputFiles="@(CompileShader)" OutputPath="$(IntermediateOutputPath)">
+      <Output TaskParameter="OutputFiles" ItemName="FileWrites" />
+      <Output TaskParameter="OutputFiles" ItemName="CompiledShader" />
+    </CompileShader>
+  </Target>
+</Project>
